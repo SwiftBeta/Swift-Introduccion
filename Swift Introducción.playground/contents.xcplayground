@@ -16,5 +16,6 @@
         <page name='Herencia'/>
         <page name='Inicializadores'/>
         <page name='Protocolos'/>
+        <page name='Genéricos'/>
     </pages>
 </playground>

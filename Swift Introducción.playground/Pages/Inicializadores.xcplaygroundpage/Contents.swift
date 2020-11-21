@@ -111,4 +111,27 @@ let oneMysteryItem = RecipeIngredient()
 let oneBacon = RecipeIngredient(name: "Bacon")
 let sixEggs = RecipeIngredient(name: "Eggs", quantity: 6)
 
+/*:
+ ## Inicializador que puede fallar
+*/
+
+enum Message: Int {
+    case sent = 0
+    case received
+    case read
+    
+    init?(rawValue: Int) {
+        switch rawValue {
+        case 0:
+            self = .sent
+        case 1:
+            self = .received
+        case 2:
+            self = .read
+        default:
+            return nil
+        }
+    }
+}
+
 //: [Next](@next)
